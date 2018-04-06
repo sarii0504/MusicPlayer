@@ -1,0 +1,289 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.titleID{
+
+  text-align:center;
+  font-size:500%;
+}
+
+.testCss{
+  color: brown;
+}
+
+.Audio{
+  position:absolute;
+  top:540px;
+  height:40px;
+  width:280px;
+  left: 900px;
+}
+
+.buttonLast{
+  position:absolute;
+  top:550px;
+  left:800px;
+
+}
+
+.buttonNext{
+  position:absolute;
+  top:550px;
+  left:1200px;
+}
+.background{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.musicImg{
+  position:absolute;
+  top:100px;
+  left:850px;
+  width:350px;
+  height:350px;
+  z-index: 1;
+  font-size: 200%;
+  color: floralwhite;
+}
+
+
+.songTitle{
+  position:absolute;
+  top:20px;
+  left:820px;
+  color: floralwhite;
+  font-size: 200%;
+}
+
+.outer-container,.content {
+  width: 300px;
+  height: 400px;
+}
+
+.outer-container {
+  position: absolute;
+  left:500px;
+  top:100px;
+  overflow: hidden;
+}
+
+.inner-container {
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.content{
+  cursor:grab;
+  color:#666666;
+}
+
+.hide{
+  display: none;
+}
+
+.cataBox,.cataBox2{
+  width: 200px;
+  height: 300px;
+}
+.cataBox2{
+  position: absolute;
+  left:140px;
+  top:330px;
+  overflow: hidden;
+}
+
+.cataBox1{
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.cataBox{
+  cursor:grab;
+  color:#666666;
+}
+
+
+.test2{
+  color:floralwhite;
+  top:200px;
+  left:200px;
+  width:300px;
+  height:500px;
+  overflow-y: auto;
+}
+
+.head{
+  text-align:center;
+  color: #999999;
+  font-size:500%;
+  text-shadow: 5px 5px 5px #666666;
+}
+
+
+.homepage{
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 38px;
+  left:400px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.likes_homepage{
+  display: inline-block;
+  height: 38px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.likes_dislikes{
+  display: inline-block;
+  height: 38px;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.dislikes_likes{
+  display: inline-block;
+  height: 38px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btnlist{
+  text-align: center;
+}
+
+.catalogHide,.catalogShow,.catalogGet{
+  display: inline-block;
+  height: 38px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #666666;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.catalogHide{
+  display:none;
+  position: absolute;
+  left:100px;
+  top:265px;
+}
+.catalogShow{
+  position: absolute;
+  left:100px;
+  top:265px;
+}
+.catalogGet{
+  position: absolute;
+  left:100px;
+  top:230px;
+}
+
+.lyricsHide,.lyricsShow{
+  position:absolute;
+  top:192px;
+  left:100px;
+  display: inline-block;
+  height: 38px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #666666;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.lyricsHide{
+  display:none;
+}
+
+.repeatAllSongs,.repeatCurrentSong,.buttonLast,.buttonNext{
+
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+  color: #666666;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.repeatCurrentSong{
+  position:absolute;
+  top:500px;
+  left:1040px;
+}
+
+.repeatAllSongs{
+  position:absolute;
+  top:500px;
+  left:940px;
+}

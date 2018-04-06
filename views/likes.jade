@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        title.titleID=title
+        script(src='/javascripts/func.js').
+        script(src = '/javascripts/jquery.js').
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        audio.Audio#myMusic(controls = 'controls',autoplay="autoplay")
+            source#audioSrc(type = 'audio/mpeg')
+            //显示音频控件，并自动播放音频
+        p
+            img.musicImg#musicImg(alt="没有获取目录或没有获取到该歌曲的图片信息")
+            //设置没有图片src时显示的文字信息
+            img.background(src= '/images/background.jpg')
+            //网页背景图片
+        h.hide#test=catalog
+        //显示，只是为了接受从服务器传来的歌曲名字符串
+
+        button.buttonLast#buttonLast(type = 'button', onclick = "playLastSong()") 上一首
+        button.buttonNext#buttonNext(type = 'button', onclick = "playNextSong()") 下一首
+        button.lyricsShow#lyricsShow(type = 'button', onclick = "showLyrics()") 显示歌词
+        button.lyricsHide#lyricsHide(type = 'button', onclick = "hideLyrics()") 隐藏歌词
+        button.catalogShow#catalogShow(type="button", onclick="showCatalog()") 显示目录
+        button.catalogHide#catalogHide(type="button",onclick="hideCatalog()") 隐藏目录
+        button.catalogGet#catalogGet(type="button",onclick="getCatalog()") 生成目录
+        button.repeatAllSongs#repeatAllSongs(type="button",onclick="repeatAllSongs()") 顺序播放
+        button.repeatCurrentSong#repeatCurrentSong(type="button",onclick="repeatCurrentSong()") 单曲循环
+        nav
+            ul
+                li
+                    a.likes_homepage(href='/') Homepage
+                li
+                    a.dislikes_likes(href='likes') Likes
+                li
+                    a.likes_dislikes(href='dislikes') Dislikes
+        .outer-container#lyricsBox
+            .inner-container
+                .content#lyrics
+                //显示歌词的框，用三个div元素是为了隐藏滚动条
+
+        .cataBox2#cataBox2
+            .cataBox1
+               .cataBox#cataBox
+                //显示目录的框，用三个div元素是为了隐藏滚动条
+
+        .hide#prefix=getPrefix
+        //不显示，只是为了接受从服务器传来的前缀字符串
+
+
+
